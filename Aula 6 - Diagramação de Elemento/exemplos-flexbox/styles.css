@@ -1,0 +1,63 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.container-flex {
+  display: flex;
+  gap: 10px;
+  background-color: purple;
+  color: white;
+}
+.item-flex {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+
+}
+.direcao-linha {
+    flex-direction: row;
+}
+.direcao-coluna {
+    flex-direction: column;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap;
+}
+.justificar-inicio {
+    justify-content: flex-start;
+}
+.justificar-centro {
+    justify-content: center;
+}
+.justificar-fim {
+    justify-content: flex-end;
+}
+.justificar-space-between {
+    justify-content: space-between;
+}
+.justificar-space-around {
+    justify-content: space-around;
+}
+.justificar-space-evenly {
+    justify-content: space-evenly;
+}
+.alinhar-items .conatainer-flex{
+    height: 100px;
+}
