@@ -58,6 +58,21 @@ h2 {
 .justificar-space-evenly {
     justify-content: space-evenly;
 }
-.alinhar-items .conatainer-flex{
-    height: 100px;
+.alinhar-items .container-flex{
+    height: 300px;
+}
+.alinhar-stretch {
+    align-items: stretch;
+}
+.alinhar-inicio {
+    align-items: start;
+}
+.alinhar-fim {
+    align-items: end;
+}
+.alinhar-centro {
+    align-items: center;
+}
+.alinhar-baseline {
+    align-items: baseline;
 }
