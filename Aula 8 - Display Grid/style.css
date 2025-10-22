@@ -1,0 +1,147 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+.grid-container {
+    display: grid;
+    background-color: #eee;
+    padding: 10px;
+    gap:10px;
+
+}
+
+.grid-container img{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+    display: block;
+}
+
+.item-grid {
+    background-color: rgba(0, 0, 0, 0.638);
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+}
+
+/*1. Grid Básico com linhas e colunas definidas */
+.basico {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+/*2. Uso de repeat(), minimax() e fr*/
+.repeat-minmax {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    /*4 colunas com largura minima de 100px (manter proporcao dos itens*/
+    grid-auto-rows: 100px;
+    gap: 20px;
+}
+
+/* 3.Grid responsivo com auto-fit e minmax()*/
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Ajusta o número de colunas conforme o espaço disponivel*/
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+
+.sobreposicao {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.item2 {
+    grid-column: 2 / 4;
+    grid-row:1/2;
+    background-color: rgba(255, 0, 0, 0.371);
+}
+.item3 {
+    grid-column: 1/4;
+}
+.item4 {
+    grid-column: 3/4;
+}.areas-nomeadas {
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "menu conteudo"
+    "rodape rodape";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: green;
+}
+.menu {
+    grid-area: menu;
+    background-color: lightblue;
+}
+.conteudo {
+    grid-area: conteudo;
+    background-color: red;
+}
+.rodape {
+    grid-area: rodape;
+    background-color: purple;
+}
+.grid-aninhado {
+    grid-template-columns: repeat(2, 1FR);
+    grid-gap:10px;
+}
+.subgrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.subitem-grid {
+    background-color: orange;
+    padding: 10px;
+    color: white;
+}
+.layout-pagina {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+
+}
+.header {
+    grid-column: 1/4;
+    background-color: #3f51b5;
+}
+.footer {
+    grid-column: 1/4;
+    background-color: #4caf50;
+}
+.nav {
+    height: 300px;
+    background-color: #f44336;
+}
+.aside {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-color: #ff9800 ;
+}
+.main {
+    background-color: #2196f3;
+}
+
