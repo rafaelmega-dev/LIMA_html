@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre SGBD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="inicio">
+
+    <!-- ===== MENU SIMPLIFICADO ===== -->
+    <nav id="menu">
+        <ul class="menu-principal">
+            <li><a href="#definicao">Definição</a></li>
+            <li><a href="#exemplos">Exemplos</a></li>
+            <li><a href="#tipos">Tipos</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#importancia">Importância</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="cabecalho">
+        
+        <h1>Pesquisa sobre Sistema de Gerenciamento de Banco de Dados (SGBD)</h1>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main class="conteudo">
+
+        <!-- Definição -->
+        <section id="definicao">
+            <h2>O que é SGBD</h2>
+            <p>
+                <strong>SGBD</strong> significa <strong>Sistema de Gerenciamento de Banco de Dados</strong>. 
+                É o software responsável por <strong>criar, organizar, controlar e acessar</strong> os bancos de dados.
+            </p>
+            <p>
+                Ele funciona como um “<em>bibliotecário digital</em>”, que organiza, encontra e entrega o dado certo quando o usuário solicita.
+            </p>
+            <p>
+                O SGBD armazena, organiza, consulta, atualiza, protege e garante a integridade dos dados — 
+                controlando o acesso e o desempenho de todo o banco de dados.
+            </p>
+        </section>
+
+        <!-- Exemplos -->
+        <section id="exemplos">
+            <h2>Exemplos de uso de SGBD</h2>
+            <ol>
+                <li><strong>Bancos e aplicativos financeiros:</strong> guardam dados de contas, transações, clientes e histórico de transferências.
+                    <br>→ Toda vez que você consulta o saldo ou faz um PIX, o sistema acessa o banco de dados em um SGBD.
+                </li>
+                <li><strong>Escolas e instituições de ensino:</strong> armazenam dados de alunos, professores, notas e presença.
+                    <br>→ Quando o professor lança suas notas no sistema, ele está salvando essas informações no banco de dados via SGBD.
+                </li>
+                <li><strong>Lojas, supermercados e e-commerces:</strong> mantêm informações sobre produtos, preços, estoque e pedidos.
+                    <br>→ Ao adicionar algo ao carrinho, o site registra isso no banco de dados.
+                </li>
+            </ol>
+            <p>Outros exemplos incluem redes sociais, hospitais, empresas de transporte, prefeituras e órgãos públicos.</p>
+        </section>
+
+        <!-- Tipos -->
+        <section id="tipos">
+            <h2>Tipos de SGBD</h2>
+            
+            <h3>SGBD Relacional (SQL)</h3>
+            <p>
+                Organiza os dados em <strong>tabelas</strong> (linhas e colunas), parecidas com planilhas.  
+                Cada tabela se relaciona com outras por meio de chaves (como o ID de um aluno, por exemplo).
+            </p>
+            <ul>
+                <li><strong>Vantagens:</strong>
+                    <ul>
+                        <li>Ideal para dados bem estruturados</li>
+                        <li>Estrutura organizada e padronizada</li>
+                        <li>Alta confiabilidade e segurança</li>
+                    </ul>
+                </li>
+                <li><strong>Desvantagens:</strong>
+                    <ul>
+                        <li>Menos flexível para dados variados</li>
+                        <li>Pode ser mais lento com grandes volumes não estruturados</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>SGBD Não Relacional (NoSQL)</h3>
+            <p>
+                Armazena dados de forma mais <strong>flexível</strong>, sem tabelas fixas, podendo usar formatos como 
+                documentos, chave-valor, grafos ou colunas.  
+                É rápido e ideal para grandes volumes de dados variados.
+            </p>
+            <ul>
+                <li><strong>Vantagens:</strong>
+                    <ul>
+                        <li>Alta flexibilidade e escalabilidade</li>
+                        <li>Fácil adaptação a mudanças</li>
+                    </ul>
+                </li>
+                <li><strong>Desvantagens:</strong>
+                    <ul>
+                        <li>Menor consistência dos dados</li>
+                        <li>Falta de padronização</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Características -->
+        <section id="caracteristicas">
+            <h2>Características do SGBD</h2>
+            <ul>
+                <li>Armazenamento estruturado</li>
+                <li>Linguagem de consulta (SQL ou NoSQL)</li>
+                <li>Segurança e controle de acesso</li>
+                <li>Integridade e consistência</li>
+                <li>Backup e recuperação de dados</li>
+                <li>Gerenciamento de múltiplos usuários</li>
+            </ul>
+        </section>
+
+        <!-- Importância -->
+        <section id="importancia">
+            <h2>Importância no desenvolvimento de sistemas</h2>
+            <ul>
+                <li>Organização eficiente de informações</li>
+                <li>Maior segurança e confiabilidade</li>
+                <li>Suporte ao desenvolvimento de aplicações</li>
+                <li>Redução de redundância de dados</li>
+                <li>Base para a tomada de decisões</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="rodape">
+        <p>Desenvolvido por <strong>Rafael Leme Mega</strong> e <strong>Samuel Angelo Carneiro Dias</strong></p>
+    </footer>
+
+</body>
+</html>
